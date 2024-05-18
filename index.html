@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="output-onlinepngtools.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Undergraduate Computer Science Student</p>
@@ -45,7 +47,6 @@
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('resume')">Resume</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -70,11 +71,6 @@
                             <li><span>Relevant Coursework</span><br>Adv. Object-Oriented Programming, Advanced Data Structures, Software Development
                                 Studio, Discrete Structures, Automata, Matrix Algebra, Careers in Tech</li>
                             <li><span>Third Education</span><br>Description, etc...</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="resume">
-                        <ul>
-                            <li><span>View Resume <a href="resume.pdf">here</a>.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -112,10 +108,62 @@
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img  src="output-onlinepngtools.png"> <* update *>
+                        <img  src="phone.png"> <* update *>
+                        <div class="layer">
+                            <h3>Name of Work</h3>
+                            <p>Description of the work</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img  src="phone.png"> <* update *>
+                        <div class="layer">
+                            <h3>Name of Work</h3>
+                            <p>Description of the work</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img  src="phone.png"> <* update *>
+                        <div class="layer">
+                            <h3>Name of Work</h3>
+                            <p>Description of the work</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- -----------contact----------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>andre.melendez5835@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>915-422-7858</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
+            <! -- ----------- removed copyright div ----------- -->
         </div>
 
         <script>
@@ -135,13 +183,41 @@
             }
         </script>
 
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbztRSMKUg2aAkRZq4FGR2gi4rgfTWe-nseTpQh0Ff_SsXpy-07rujlm8viST2czqC4/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
     <footer>
-        <p>&copy; 2024 Andre Melendez</p>
-        <ul class="social-links">
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
+        <p>Copyright &copy; Andre Melendez</p>
     </footer>
 </body>
 </html>
