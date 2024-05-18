@@ -11,7 +11,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <h1>Andre Melendez</h1>
+                <img src="output-onlinepngtools.png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -22,46 +22,87 @@
             </nav>
             <div class="header-text">
                 <p>Undergraduate Computer Science Student</p>
-                <h2>Hi, I'm <span>Andre Melendez</span><br>from El Paso, Texas</h2>
+                <h2>Hi, I'm <span>Andre Melendez</span> from<br>The University of Texas<br>at El Paso</h2>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm a passionate Computer Science student with a keen interest in software development.
+                        I had the incredible opportunity to participate in the Google Tech Exchange program, which greatly enriched my skills and perspective.
+                        One of my notable projects includes developing an innovative interior design app. I am hardworking, ambitious, and always eager to learn and take on new challenges.
+                        I thrive on pushing my limits and continually seeking new knowledge and experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('resume')">Resume</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Proficient Languages</span><br>Java, Python</li>
+                            <li><span>Bilingual</span><br>Spanish and English (written and oral)</li>
+                            <li><span>API</span><br>BigQuery API</li>
+                            <li><span>ML</span><br>Vertex Vision AI API Model: Imagen 2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Google Tech Exchange</span><br>Took a Google Technical assessment and was selected among the top 12% (180/1500) applicants. A semesterlong virtual academic program facilitated by Google engineers focused on developing technical skills in: Github,
+                                Google Cloud Shell, Web-App Development (Python), Data Structures, Technical Interviews
+                            </li>
+                            <li><span>Second Experience</span><br>Description</li>
+                            <li><span>Third Experience</span><br>Description, etc...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current Degree</span><br>Bachelor of Engineering in Computer Science with a minor in Economics</li>
+                            <li><span>Relevant Coursework</span><br>Adv. Object-Oriented Programming, Advanced Data Structures, Software Development
+                                Studio, Discrete Structures, Automata, Matrix Algebra, Careers in Tech</li>
+                            <li><span>Third Education</span><br>Description, etc...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="resume">
+                        <ul>
+                            <li><span>View Resume <a href="resume.pdf">here</a>.</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
+        <script>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>Hello! I'm a passionate Computer Science student with a keen interest in software development. I had the incredible opportunity to participate in the Google Tech Exchange program, which greatly enriched my skills and perspective. One of my notable projects includes developing an innovative interior design app. I am hardworking, ambitious, and always eager to learn and take on new challenges. I thrive on pushing my limits and continually seeking new knowledge and experiences..</p> 
-        <img src="photo.png" alt="photo of myself" class="profile-pic">
-        <br>
-        <span>Here is a link to view my <a href="resume.pdf">resume</a>.</span>
-    </section>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-    <section id="resume">
-        <h3>Experience</h3>
-        <div class="job">
-            <h4>Google Tech Exchange</h4>
-            <p>Google (2024)</p>
-            <ul>
-                <li>UPDATE</li>
-                <li>ADD DESCRIPTION</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h4>...More experience...</h4>
-        </div>
-        
-        <h3>Projects</h3>
-         <div class="job">
-            <h4>...More projects...</h4>
-        </div>
-    </section>
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
 
     <footer>
         <p>&copy; 2024 Andre Melendez</p>
         <ul class="social-links">
             <li><a href="#">LinkedIn</a></li>
             <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li> 
+            <li><a href="#">Twitter</a></li>
         </ul>
     </footer>
 </body>
