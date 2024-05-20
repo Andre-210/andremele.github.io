@@ -261,13 +261,13 @@ section#about {
     color: var(--contrast-color);;
     text-align: center;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center;
+    justify-content: center;
     margin-left: 35px;
     border: solid 2px;
     border-radius: 15%;
-    line-height: 1; /* Ensures the line height does not cause extra spacing */
-    padding-top: 17px; /* Adjust this value to shift the icon down as needed */
+    line-height: 1;
+    padding-top: 17px;
 }
 
 #about .experience-list {
