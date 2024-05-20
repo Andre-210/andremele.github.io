@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ---------- GENERAL ---------- -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,189 +9,130 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/235a0e88e0.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="row">
-                <div class="header-content">
-                    <div class="header-text">
-                        <p>Undergraduate Computer Science Student</p>
-                        <h1>Hi, I'm <span>Andre Melendez</span> from The University of Texas at El Paso</h1>
-                    </div>
-                </div>
-                <div class="header-image">
-                    <img src="photo.png" alt="Andre Melendez">
-                </div>
+<!-- ---------- BODY ---------- -->
+<body class="dark-theme">
+<header>
+    <!-- ---------- NAVIGATION BAR ---------- -->
+    <div class="navbar">
+        <div class="logo"><a href="#introduction">Andre Melendez's Portfolio</a></div>
+        <ul class="links">
+            <li><a href="#introduction">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+        </ul>
+        <a href="#contact" class="action_btn">Contact</a>
+        <div id="theme-switcher">
+            <i class="fa-regular fa-sun"></i>
         </div>
+        <div class="toggle_btn">
+            <i class="fas fa-bars"></i>
         </div>
     </div>
-    <!-- -----------about----------- -->
-    <div id="about">
+    <div class="dropdown_menu">
+        <li><a href="#introduction">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact" class="action_btn">Contact</a></li>
+    </div>
+</header>
+<main>
+    <!-- ---------- INTRODUCTION SECTION ---------- -->
+    <section id="introduction">
+        <img src="photo.png" alt="Student Photo">
+        <h1>Hello, I'm Andre, <br/><span>Undergraduate Student from UTEP</span></h1>
+        <p>A passionate Computer Science student interested in software development.<br/>I am hardworking, ambitious, and eager to learn and take on new challenges.</p>
+    </section>
+    <!-- ---------- ABOUT SECTION---------- -->
+    <section id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="photo.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello! I'm a passionate Computer Science student with a keen interest in software development.
-                        I had the incredible opportunity to participate in the Google Tech Exchange program, which greatly enriched my skills and perspective.
-                        One of my notable projects includes developing an innovative interior design app. I am hardworking, ambitious, and always eager to learn and take on new challenges.
-                        I thrive on pushing my limits and continually seeking new knowledge and experiences.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Proficient Languages</span><br>Java, Python</li>
-                            <li><span>Learning</span><br>CSS, HTML, JavaScript, C#</li>
-                            <li><span>Bilingual</span><br>Spanish and English (written and oral)</li>
-                            <li><span>Team Collaboration and Leadership</span><br>Git | GitHub | Design & Mocks</li>
-                            <li><span>API</span><br>BigQuery API | Gemini AI API</li>
-                            <li><span>ML</span><br>Vertex Vision AI API Model: Imagen 2</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Google Tech Exchange</span><br>Ranked in the top 12% (180/1500) in a Google Technical assessment, leading to participation in a virtual program by Google engineers. It covered GitHub, Google Cloud Shell, Python web-app development, data structures, and technical interviews.</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Current Degree</span><br>Bachelor of Engineering in Computer Science with a Minor in Economics</li>
-                            <li><span>Relevant Coursework</span><br>Adv. Object-Oriented Programming | Advanced Data Structures | Software Development
-                                Studio | Discrete Structures | Automata | Matrix Algebra | Careers in Tech</li>
-                        </ul>
+            <h1 class="sub-title">About Me</h1>
+            <div class="contents">
+                <p>I've always loved solving puzzles and creatively thinking through problems to find unique solutions. This fascination with problem-solving makes computer science the perfect field for me. I'm familiar with Python and Java and am currently learning HTML, CSS, JavaScript, and C#. I am always eager to learn new technologies and concepts and embrace any challenge that furthers my knowledge. When I'm not coding, I enjoy playing video games, doing CrossFit, and surfing the web.</p>
+            </div>
+            <h1 class="sub-title">Technologies</h1>
+            <div class="contents">
+                <i class="fa-brands fa-java custom-style"></i>
+                <i class="fa-brands fa-python custom-style"></i>
+                <i class="fa-brands fa-css3-alt custom-style"></i>
+                <i class="fa-brands fa-html5 custom-style"></i>
+                <i class="fa-brands fa-js custom-style"></i>
+                <i class="fa-brands fa-figma custom-style"></i>
+                <i class="fa-brands fa-git custom-style"></i>
+                <i class="fa-brands fa-github custom-style"></i>
+                <i class="fa-brands fa-microsoft custom-style"></i>
+                <i class="fa-brands fa-chrome custom-style"></i>
+            </div>
+            <h1 class="sub-title">Experience</h1>
+            <div class="contents">
+                <div class="experience-list">
+                    <div>
+                        <i class="fa-brands fa-google"></i><h2>Google Tech Exchange</h2>
+                        <p>I was selected among the top 12% out of 1,500 applicants in a Google Technical assessment. This achievement led me to participate in a prestigious semester-long virtual academic program facilitated by Google engineers. The program focused on honing my technical skills in various areas, including:</p>
+                        <br>
+                        <p><span>GitHub | Google Cloud Shell | Web-App Development (Python) | Data Structures | Technical Interviews</span></p>
+                        <br>
+                        <p>This experience significantly enhanced my expertise and prepared me for advanced challenges in the tech industry.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- -----------services---------- -->
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Projects</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-people-roof"></i>                        <h2>ARCD</h2>
-                        <p>A web application focused on interior design inspiration utilizing image generation.</p>
-                        <a href="https://official-arcd-hwptfyl7yq-uc.a.run.app/?nav=explore">Check out the web app here!</a>
-                        <a href="https://github.com/Andre-210/ARCD">Check it out in github here!</a>
-
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-chess"></i>
-                        <h2>Chess Game</h2>
-                        <p>Practiced Object-Oriented Programming by making a chess game where users can create and move chess pieces.</p>
-                        <a href="https://github.com/Andre-210/chessGame">Check it out in github here!</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>More projects incoming</h2>
-                        <p>[Fill Description]</p>
-                        <a href="#">[Add Link]</a>
-                    </div>
+    </section>
+    <!-- ---------- PROJECT SECTION---------- -->
+    <section id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-people-roof"></i><h2>ARCD</h2>
+                    <p>A web application focused on interior design inspiration utilizing image generation.</p>
+                    <br>
+                    <p>Technologies: Python | CSS | HTML | JavaScript | Streamlit | GitHub | Figma | Google Cloud Console | Vertex Vision AI API | BigQuery API </p>
+                    <a href="https://official-arcd-hwptfyl7yq-uc.a.run.app/?nav=explore">Check out the web app here!</a>
+                    <a href="https://github.com/Andre-210/ARCD">Check it out in GitHub here!</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chess"></i>
+                    <h2>Chess Game</h2>
+                    <br>
+                    <p>Technologies: Java | GitHub | Figma | Java AWT API</p>
+                    <p>Practiced Object-Oriented Programming by making a chess game where users can create and move chess pieces.</p>
+                    <a href="https://github.com/Andre-210/chessGame">Check it out in GitHub here!</a>
                 </div>
             </div>
         </div>
-        <! -- -----------portfolio----------- -->
-        <!-- -----------contact----------- -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>andre.melendez5835@gmail.com</p>
-                        <p><i class="fa-solid fa-square-phone"></i>915-422-7858</p>
-                        <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/andre-melendez-011a33249/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/Andre-210"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                        <a href="resume.pdf" download class="btn btn2">Download Resume</a>
-
+    </section>
+    <!-- ---------- CONTACT SECTION ---------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>andre.melendez5835@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>915-422-7858</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/andre-melendez-011a33249/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Andre-210"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
                 </div>
             </div>
-            <! -- ----------- removed copyright div ----------- -->
         </div>
+    </section>
+</main>
 
-        <script>
-
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-
-            function opentab(tabname) {
-                for(tablink of tablinks) {
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-
-        <script>
-
-            var sidemenu = document.getElementById("sidemenu");
-
-            function openmenu() {
-                sidemenu.style.right = "0";
-            }
-
-            function closemenu() {
-                sidemenu.style.right = "-200px";
-            }
-
-        </script>
-
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbztRSMKUg2aAkRZq4FGR2gi4rgfTWe-nseTpQh0Ff_SsXpy-07rujlm8viST2czqC4/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
-
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => {
-                        msg.innerHTML = "Message sent successfully"
-                        setTimeout(function(){
-                            msg.innerHTML = ""
-                        }, 5000)
-                        form.reset()
-                    })
-                    .catch(error => console.error('Error!', error.message))
-            })
-        </script>
-
-    <footer>
-        <p>Copyright &copy; Andre Melendez</p>
-    </footer>
+<!-- ---------- JAVASCRIPT ---------- -->
+<script src="script.js"></script>
 </body>
 </html>
