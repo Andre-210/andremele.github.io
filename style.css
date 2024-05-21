@@ -18,8 +18,8 @@ html {
 /* ---------- LIGHT THEME ---------- */
 body.light-theme {
     --primary-color: #ffffff;
-    --secondary-color: #000000;
-    --contrast-color: #B87333;
+    --secondary-color: #151616;
+    --contrast-color: #0D787B;
 }
 
 body.light-theme {
@@ -43,9 +43,9 @@ body.light-theme a {
 
 /* ---------- DARK THEME ---------- */
 body.dark-theme {
-    --primary-color: #000000;
+    --primary-color: #151616;
     --secondary-color: #ffffff;
-    --contrast-color: #B87333;
+    --contrast-color: #0D787B;
 }
 
 body.dark-theme {
@@ -348,7 +348,7 @@ section#project {
 
 #project .project-list div a {
     text-decoration: none;
-    color: orange;
+    color: #FF4000;
     font-size: 18px;
     margin-top: 20px;
     display: inline-block;
