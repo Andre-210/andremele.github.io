@@ -460,7 +460,7 @@ section#contact {
     cursor: pointer;
 }
 
-/* ---------- RESPONSIVE DESIGN (PHONE) ---------- */
+/* ---------- RESPONSIVE DESIGN (PHONE/TABLET) ---------- */
 @media (max-width: 992px) {
     .navbar .links,
     .navbar .action_btn {
@@ -480,5 +480,63 @@ section#contact {
     .dropdown_menu {
         left: 2rem;
         width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    #about .experience-list,
+    #project .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        margin-bottom: 100px;
+    }
+    section#about {
+        margin: 200px auto;
+        padding: 20px;
+    }
+
+    section#project {
+        margin: 2300px auto;
+        padding: 20px;
+    }
+
+    section#contact {
+        margin: -1200px auto;
+        padding: 20px;
+    }
+
+    #contact .contact-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #about .experience-list,
+    #project .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        margin-bottom: 100px;
+    }
+    section#about {
+        margin: 200px auto;
+        padding: 20px;
+    }
+
+    section#project {
+        margin: 2300px auto;
+        padding: 20px;
+    }
+
+    section#contact {
+        margin: -1200px auto;
+        padding: 20px;
+    }
+
+    #contact .contact-content {
+        flex-direction: column;
     }
 }
