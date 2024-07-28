@@ -9,7 +9,7 @@ This is a website to show off my projects and skills.
 - JavaScript
 - GitHub
 
-Visuals
+### Visuals
 
 ![portfolio#1](https://github.com/Andre-210/andremele.github.io/assets/156269322/d7377525-83ca-47b5-a641-4d277b9db06f)
 
