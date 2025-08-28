@@ -16,3 +16,24 @@ export const INTRO = {
     "When I'm not coding, you can find me watching anime, playing basketball, hiking, or at the gym. " +
     "Fun fact: I have a shih-tzu.",
 };
+
+export const SOCIALS = {
+    socials: [
+        {
+            label: 'GitHub',
+            link: 'https://github.com/Andre-210',
+            iconClass: 'fa-brands fa-github'
+        },
+        {
+            label: 'LinkedIn',
+            link: 'https://www.linkedin.com/in/andre-mele/',
+            iconClass: 'fa-brands fa-linkedin-in'
+        },
+        {
+            label: 'Instagram',
+            link: 'https://instagram.com/andre_mele210',
+            iconClass: 'fa-brands fa-instagram'
+        },
+    ],
+    email: 'andre.melendez5835@gmail.com'
+};
