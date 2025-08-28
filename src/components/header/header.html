@@ -1,0 +1,10 @@
+<header class="header" [ngClass]="{ 'open': menuOpen }">
+    <button class="menu-btn" aria-label="Toggle Menu" (click)="toggleMenu()">{{ content.toggle }}</button>
+    <nav class="nav" [ngClass]="{ 'open': menuOpen }">
+        @for (item of content.nav; track item.label) {
+            <a [href]="item.link" class="nav-link">
+                {{ item.label }}
+            </a>
+        }
+    </nav>
+</header>

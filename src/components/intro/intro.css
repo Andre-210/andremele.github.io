@@ -1,0 +1,33 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: translate(-10vw, -10vh);
+    text-align: center;
+}
+
+.name-container {
+    width: 600px; 
+}
+
+.description {
+    max-width: 600px; 
+}
+
+h1 {
+    text-align: left;
+    font-size:30px;
+    color: white;
+}
+
+.name {
+    color: #ff6600;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
