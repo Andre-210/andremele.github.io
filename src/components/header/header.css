@@ -19,7 +19,9 @@
     display: flex;
     gap: 4rem;
     order: 2;
+    margin-top: 1.5rem;
     margin-left: auto;
+    margin-right: 3rem;
 }
 
 .nav-link {
