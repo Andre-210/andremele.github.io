@@ -1,7 +1,3 @@
-export const TITLE = {
-    page: "Andre's Portfolio",
-}
-
 export const HEADER = {
     toggle: '☰',
     nav: [
