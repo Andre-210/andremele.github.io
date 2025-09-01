@@ -11,7 +11,7 @@
 }
 
 .tech-stack-card {
-  background-color: rgba(136, 136, 136, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -49,6 +49,7 @@ h2 {
 }
 
 .tech-item span {
+  color: white;
   margin-top: 10px;
   font-size: 1.1em;
 }
