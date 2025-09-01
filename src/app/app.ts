@@ -4,11 +4,12 @@ import { Header } from '../components/header/header';
 import { Intro } from '../components/intro/intro';
 import { Socials } from '../components/socials/socials';
 import { TechStack } from '../components/tech-stack/tech-stack';
+import { Background } from '../components/background/background';
 
 @Component({
   selector: 'app-root',
     standalone: true,
-  imports: [Header, Intro, Socials, TechStack],
+  imports: [Header, Intro, Socials, TechStack, Background],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

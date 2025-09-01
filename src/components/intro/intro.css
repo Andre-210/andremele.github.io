@@ -1,111 +1,118 @@
 .introduction {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    width: 90%;
-    max-width: 1400px; /* Reduced max-width */
-    margin: auto;
-    text-align: left;
-    padding: 0 2rem; /* Added horizontal padding */
-    box-sizing: border-box; /* Include padding in width calculation */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  text-align: left;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .text-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .name-container {
-    width: 600px; 
+  width: 600px; 
 }
 
 .description {
-    max-width: 600px; 
+  max-width: 600px; 
 }
 
 .photo-card {
-    background-color: #2a2a2a;
-    padding: 1rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0; /* Prevent card from shrinking */
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .photo-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 h1 {
-    text-align: left;
-    font-size:30px;
-    color: white;
+  text-align: left;
+  font-size:30px;
+  color: white;
 }
 
 .name {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 p {
-    text-align: left;
-    font-size: 20px;
-    color: white;
+  text-align: left;
+  font-size: 20px;
+  color: white;
 }
 
 /* Responsive styles */
-@media (max-width: 1200px) { /* Added a new breakpoint for larger screens */
-    .introduction {
-        justify-content: center;
-        gap: 5rem;
-    }
-    .name-container {
-        width: 500px;
-    }
+@media (max-width: 1200px) {
+  .introduction {
+    justify-content: center;
+    gap: 5rem;
+  }
+    
+  .name-container {
+    width: 500px;
+  }
 }
 
 @media (max-width: 992px) {
-    .introduction {
-        gap: 3rem;
-    }
-    .name-container, .description {
-        width: 450px;
-    }
-    .photo-card {
-        width: 350px;
-        height: 350px;
-    }
+  .introduction {
+    gap: 3rem;
+  }
+
+  .name-container, .description {
+    width: 450px;
+  }
+  
+  .photo-card {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media (max-width: 768px) {
-    .introduction {
-        flex-direction: column;
-        height: auto;
-        padding: 4rem 1rem;
-        text-align: center;
-        width: 100%;
-    }
-    .text-content {
-        align-items: center;
-    }
-    h1, p {
-        text-align: center;
-    }
-    .name-container, .description {
-        width: 100%;
-        max-width: 500px;
-    }
-    .photo-card {
-        margin-top: 2rem;
-        width: 300px;
-        height: 300px;
-    }
+  .introduction {
+    flex-direction: column;
+    height: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .text-content {
+    align-items: center;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  .name-container, .description {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .photo-card {
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
+  }
 }

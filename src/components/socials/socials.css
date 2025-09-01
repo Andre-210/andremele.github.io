@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-  color: #ff6600;
+  color: #ff6600 !important;
 }
 
 a i {
