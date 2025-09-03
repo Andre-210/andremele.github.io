@@ -1,0 +1,113 @@
+.experiences-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.experiences-container h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #000000;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.experiences-container h2.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.experiences-container h2.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.card.slide-in-right {
+  transform: translateX(100%);
+}
+
+.card.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card .image-container {
+  flex-basis: 40%;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.card-content {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  color: #000000;
+}
+
+.card-content h4 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #000000;
+}
+
+.card-content .duration {
+  font-style: italic;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    text-align: center;
+  }
+}

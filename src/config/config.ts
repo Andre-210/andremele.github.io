@@ -119,3 +119,19 @@ export const TECH_STACK = {
   }
   ]
 };
+
+export const EXPERIENCES = {
+    title: 'My Work Experiences',
+    experiences: [
+        {
+            title: 'Google',
+            position: 'Software Engineering Intern | Orchestration Frameworks',
+            duration: 'May 2025 - Aug 2025',
+            description: "As a software engineering intern on Google's Orchestration Frameworks team, I designed and developed a tool suite to streamline debugging for Android Framework engineers. " +
+            "My primary contribution involved extending Android protobuffs to capture key process metadata, a feature set to deploy on over 2 billion devices. " +
+            "I also worked a Python script to decode this data into JSON and built an interactive web application using Angular, TypeScript, and D3.js to render complex process graphs. " +
+            "The final tool significantly improved engineering workflows by providing clear, interactive visualizations and automating tedious manual tasks.",
+            image: 'assets/Google.jpg'
+        }
+    ]
+};

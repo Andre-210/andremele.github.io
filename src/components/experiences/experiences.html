@@ -1,0 +1,18 @@
+<div class="experiences-container">
+    <h2 #titleEl class="slide-in-left">{{ title }}</h2>
+    <div class="cards-container">
+        @for (experience of experiences; track experience; let i = $index) {
+            <div class="card" [class.slide-in-left]="i % 2 === 0" [class.slide-in-right]="i % 2 !== 0" #card>
+                <div class="image-container">
+                    <img [src]="experience.image" alt="{{ experience.position }}">
+                </div>
+                <div class="card-content">
+                    <h3>{{ experience.title }}</h3>
+                    <h4>{{ experience.position }}</h4>
+                    <p class="duration">{{ experience.duration }}</p>
+                    <p>{{ experience.description }}</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -12,3 +12,11 @@ export interface LinkData {
     target: NodeData;
     opacity: number;
 }
+
+export interface Experience {
+    title: string;
+    position: string;
+    duration: string;
+    description: string;
+    image: string;
+}
