@@ -34,8 +34,8 @@ export class Background implements AfterViewInit {
 
   // D3 background color scale
   private backgroundColorScale = d3.scaleLinear<string>()
-  .domain([0, 0.5, 1])
-  .range(['#1a1a1a', '#4d4c4c', '#FDFBD4'])
+  .domain([0, 0.5, 1, 1.5])
+  .range(['#1a1a1a', '#4d4c4c', '#FDFBD4', '#272757'])
   .clamp(true);
   
   // D3 nodes and links color scale
