@@ -110,4 +110,9 @@
   .card-content {
     text-align: center;
   }
+
+  .card.slide-in-left,
+  .card.slide-in-right {
+    transform: translateY(50px);
+  }
 }
