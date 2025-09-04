@@ -6,7 +6,7 @@
 .experiences-container h2 {
   font-size: 30px;
   margin-bottom: 40px;
-  color: #000000;
+  color: #ff6600;
   opacity: 0;
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }

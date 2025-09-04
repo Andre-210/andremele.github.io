@@ -135,3 +135,43 @@ export const EXPERIENCES = {
         }
     ]
 };
+
+export const PROJECTS = {
+    title: 'My Projects',
+    projects: [
+        {
+            icon: 'fa-solid fa-shield-halved',
+            title: 'Docker Exploit Mapper (DEM)',
+            description: 'Led a team of 7 to design a web platform for penetration testers to assess and exploit Docker containers, automating vulnerability assessments to save DEVCOM analysts 40+ hours monthly.',
+            technologies: 'Technologies: Docker | Trivy | Grype | Neo4j | Nmap | Metasploit | Gobuster',
+            links: [
+            ]
+        },
+        {
+            icon: 'fa-solid fa-people-roof',
+            title: 'ARCD | Gen AI Interior Design',
+            description: 'A web app that streamlines the creative process for interior designers by generating unique interior design images using Google\'s Vertex Vision AI API and BigQuery.',
+            technologies: 'Technologies: Python | Streamlit | Vertex AI | BigQuery | Google Cloud | CSS | HTML',
+            links: [
+                { text: 'GitHub', url: 'https://github.com/Andre-210/ARCD' }
+            ]
+        },
+        {
+            icon: 'fa-solid fa-brain',
+            title: 'Shakespeare Language Learning Model',
+            description: 'Developed a character-level LLM in Python using a neural network to predict the next character in a sequence, working closely with a Google engineer to implement the model.',
+            technologies: 'Technologies: Python | PyTorch | Google Colab',
+            links: [
+            ]
+        },
+        {
+            icon: 'fa-solid fa-chess',
+            title: 'Chess Game',
+            description: 'Practiced Object-Oriented Programming by developing a complete chess game where users can create, validate, and move chess pieces according to standard rules.',
+            technologies: 'Technologies: Java | GitHub | Figma | Java AWT API',
+            links: [
+                { text: 'GitHub', url: 'https://github.com/Andre-210/chessGame' }
+            ]
+        }
+    ]
+};

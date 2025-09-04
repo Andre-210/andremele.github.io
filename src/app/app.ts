@@ -6,11 +6,19 @@ import { Socials } from '../components/socials/socials';
 import { TechStack } from '../components/tech-stack/tech-stack';
 import { Background } from '../components/background/background';
 import { Experiences } from '../components/experiences/experiences';
+import { Projects } from '../components/projects/projects';
 
 @Component({
   selector: 'app-root',
     standalone: true,
-  imports: [Header, Intro, Socials, TechStack, Background, Experiences],
+  imports: [
+    Header,
+    Intro,
+    Socials,
+    TechStack,
+    Background,
+    Experiences,
+    Projects],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

@@ -20,3 +20,21 @@ export interface Experience {
     description: string;
     image: string;
 }
+
+export interface ProjectLink {
+    text: string;
+    url: string;
+}
+
+export interface Project {
+    icon: string;
+    title: string;
+    description: string;
+    technologies: string;
+    links: ProjectLink[];
+}
+
+export interface ProjectsConfig {
+    title: string;
+    projects: Project[];
+}
