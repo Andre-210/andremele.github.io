@@ -10,7 +10,17 @@
                     <h3>{{ experience.title }}</h3>
                     <h4>{{ experience.position }}</h4>
                     <p class="duration">{{ experience.duration }}</p>
-                    <p>{{ experience.description }}</p>
+                    <ul>
+                        @for(point of experience.description; track point) {
+                            <li>{{ point }}</li>
+                        }
+                    </ul>
+                    @if(experience.technologies) {
+                        <div class="technologies">
+                            <strong>Technologies Used:</strong>
+                            <span class="tech-list">{{ experience.technologies.join(' | ') }}</span>
+                        </div>
+                    }
                 </div>
             </div>
         }

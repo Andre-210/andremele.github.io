@@ -15,9 +15,9 @@ export const HEADER = {
 export const INTRO = {
   intro: "Hi, I'm ",
   name: "Andre Melendez",
-  bio: "I'm a computer science student at the University of Texas at El Paso with a passion for software and web development. " +
-  " I'm always looking for new opportunities to learn and grow. " +
-  "When I'm not coding, you can find me watching anime, playing basketball, hiking, or at the gym. " +
+  bio: "I'm a computer science student at the University of Texas at El Paso with a passion for software and web development. " + 
+  " I'm always looking for new opportunities to learn and grow. " + 
+  "When I'm not coding, you can find me watching anime, playing basketball, hiking, or at the gym. " + 
   "Fun fact: I have a shih-tzu.",
 };
 
@@ -95,11 +95,16 @@ export const EXPERIENCES = {
             title: 'Google',
             position: 'Software Engineering Intern | Orchestration Frameworks',
             duration: 'May 2025 - Aug 2025',
-            description: "As a software engineering intern on Google's Orchestration Frameworks team, I designed and developed a tool suite to streamline debugging for Android Framework engineers. " +
-            "My primary contribution involved extending Android protobuffs to capture key process metadata, a feature set to deploy on over 2 billion devices. " +
-            "I also worked a Python script to decode this data into JSON and built an interactive web application using Angular, TypeScript, and D3.js to render complex process graphs. " +
-            "The final tool significantly improved engineering workflows by providing clear, interactive visualizations and automating tedious manual tasks.",
-            image: 'assets/Google.jpg'
+            description: [
+                "Designed and developed a tool suite to streamline debugging for Android Framework engineers. ",
+                "My primary deliverable was an interactive web application using Angular, TypeScript, and D3.js to render complex process graphs. ",
+                "Continued work on a Python script to decode this data into JSON and extended Android protobuffs to capture key process metadata, a feature set to deploy on over 2 billion devices. ",
+                "The final tool significantly improved engineering workflows by providing clear, interactive visualizations and automating tedious manual tasks."
+            ],
+            technologies: [
+                'Python', 'TypeScript', 'Java', 'Angular', 'Jasmine', 'CSS', 'HTML', 'Protobuffers'
+            ],
+            image: 'assets/GoogleInt.jpg'
         }
     ]
 };

@@ -17,8 +17,9 @@ export interface Experience {
     title: string;
     position: string;
     duration: string;
-    description: string;
+    description: string[];
     image: string;
+    technologies?: string[];
 }
 
 export interface ProjectLink {
