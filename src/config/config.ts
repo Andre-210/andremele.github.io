@@ -5,7 +5,11 @@ export const HEADER = {
     { label: 'Tech Stack', link: '#tech-stack' },
     { label: 'Experience', link: '#experiences' },
     { label: 'Projects', link: '#projects' }
-  ]
+  ],
+  resume: {
+    label: 'Resume',
+    link: 'assets/resume.pdf'
+  }
 };
 
 export const INTRO = {

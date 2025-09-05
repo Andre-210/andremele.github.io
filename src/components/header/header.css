@@ -39,6 +39,23 @@
   border-bottom-color: #ff6600;
 }
 
+.resume-btn {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.resume-btn:hover {
+  background-color: #e65c00;
+}
+
 .menu-btn {
   display: none;
   background: none;
@@ -118,5 +135,11 @@
   
   .header.open .menu-btn {
     transform: translateX(195px);
+  }
+
+  .resume-btn {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
   }
 }
