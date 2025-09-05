@@ -23,6 +23,28 @@
 h2 {
   color: #ff6600;
   font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.category-section {
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.5);
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 .tech-list {
@@ -30,7 +52,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: 20px;
 }
 
 .tech-item {

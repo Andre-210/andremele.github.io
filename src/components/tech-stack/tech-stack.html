@@ -1,17 +1,23 @@
 <div class="tech-stack-container" [class.visible]="isVisible()">
     <div class="tech-stack-card">
         <h2>{{ techStack.title }}</h2>
-        <div class="tech-list">
-            @for (tech of techStack.tech; track tech.name) {
-                <div class="tech-item">
-                    @if (tech.icon !== '') {
-                        <img [src]="tech.icon" [alt]="tech.name">
-                        <span>{{ tech.name }}</span>
-                    } @else {
-                        <span class="fallback">{{ tech.name }}</span>
+        <p>{{ techStack.bio }}</p>
+        @for (category of techStack.categories; track category.categoryTitle) {
+            <div class="category-section">
+                <h3>{{ category.categoryTitle }}</h3>
+                <div class="tech-list">
+                    @for (tech of category.technologies; track tech.name) {
+                        <div class="tech-item">
+                            @if (tech.icon !== '') {
+                                <img [src]="tech.icon" [alt]="tech.name">
+                                <span>{{ tech.name }}</span>
+                            } @else {
+                                <span class="fallback">{{ tech.name }}</span>
+                            }
+                        </div>
                     }
                 </div>
-            }
-        </div>
+            </div>
+        }
     </div>
 </div>

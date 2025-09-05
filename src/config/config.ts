@@ -40,83 +40,47 @@ export const SOCIALS = {
 
 export const TECH_STACK = {
   title: 'My Tech Stack',
-  tech: [
-  {
-    name: 'Angular',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg'
-  },
-  {
-    name: 'React Native',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
-  },
-  {
-    name: 'Streamlit',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original-wordmark.svg'
-  },
-  {
-    name: 'Figma',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
-  },
-  {
-    name: 'Git/GitHub',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
-  },
-  {
-    name: 'Google Cloud',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg'
-  },
-  {
-    name: 'Jupyter',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg'
-  },
-  {
-    name: 'PyTorch',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg'
-  },
-  {
-    name: 'MySQL',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg'
-  },
-  {
-    name: 'Python',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
-  },
-  {
-    name: 'Java',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
-  },
-  {
-    name: 'JavaScript',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-  },
-  {
-    name: 'TypeScript',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
-  },
-  {
-    name: 'HTML',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
-  },
-  {
-    name: 'CSS',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
-  },
-  {
-    name: 'SQL',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-plain.svg'
-  },
-  {
-    name: 'PHP',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'
-  },
-  {
-    name: 'C',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'
-  },
-  {
-    name: 'Assembly',
-    icon: 'https://www.svgrepo.com/show/373448/assembly.svg'
-  }
+  bio: "I'm proficient in a diverse range of technologies, from building responsive frontends to developing robust backend systems and AI models. Here are some of the key tools and languages I work with.",
+  categories: [
+    {
+      categoryTitle: 'Languages',
+      technologies: [
+        { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+        { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+        { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+        { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+        { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-plain.svg' },
+        { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+        { name: 'C', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
+        { name: 'Assembly', icon: '' }
+      ]
+    },
+    {
+      categoryTitle: 'Frontend & Frameworks',
+      technologies: [
+        { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg' },
+        { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+        { name: 'Streamlit', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original-wordmark.svg' },
+        { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+        { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' }
+      ]
+    },
+    {
+      categoryTitle: 'AI & Data Science',
+      technologies: [
+        { name: 'PyTorch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' },
+        { name: 'Jupyter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg' }
+      ]
+    },
+    {
+      categoryTitle: 'Cloud, Databases & Tools',
+      technologies: [
+        { name: 'Git/GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+        { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+        { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' },
+        { name: 'Google Cloud', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' }
+      ]
+    }
   ]
 };
 
