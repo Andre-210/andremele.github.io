@@ -1,10 +1,10 @@
 export const HEADER = {
   toggle: '☰',
   nav: [
-    { label: 'Home', link: '/' },
-    { label: 'Projects', link: '/projects' },
-    { label: 'About', link: '/about' },
-    { label: 'Contact', link: '/contact' }
+    { label: 'Home', link: '#intro' },
+    { label: 'Tech Stack', link: '#tech-stack' },
+    { label: 'Experience', link: '#experiences' },
+    { label: 'Projects', link: '#projects' }
   ]
 };
 
