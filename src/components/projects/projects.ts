@@ -6,7 +6,8 @@ import {
   Inject, 
   PLATFORM_ID,
   QueryList,
-  ViewChildren
+  ViewChildren,
+  ViewChild
 } from '@angular/core';
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { PROJECTS } from '../../config/config';
@@ -29,6 +30,7 @@ export class Projects implements AfterViewInit, OnDestroy {
    */
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
+  @ViewChild('titleEl') titleRef!: ElementRef;
   @ViewChildren('projectCard') projectCards!: QueryList<ElementRef>;
 
   // list of projects
@@ -42,22 +44,28 @@ export class Projects implements AfterViewInit, OnDestroy {
    */
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
+      const isMobile = window.innerWidth < 768;
       const options = {
-        root: null,
-        rootMargin: '0px 0px -150px 0px',
-        threshold: 0
+        rootMargin: isMobile ? '-100px 0px -100px 0px' : '-250px 0px -250px 0px'
       };
       this.observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
+            entry.target.classList.add('active');
           } else {
-            entry.target.classList.remove('is-visible');
+            entry.target.classList.remove('active');
           }
         });
       }, options);
-      this.projectCards.forEach(card => {
-        this.observer?.observe(card.nativeElement);
+      this.observer.observe(this.titleRef.nativeElement);
+      this.projectCards.forEach((card, index) => {
+        const cardEl = card.nativeElement;
+        if (index % 2 === 0) {
+          cardEl.classList.add('slide-in-left');
+        } else {
+          cardEl.classList.add('slide-in-right');
+        }
+        this.observer?.observe(cardEl);
       });
     }
   }

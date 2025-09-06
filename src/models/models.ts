@@ -28,11 +28,13 @@ export interface ProjectLink {
 }
 
 export interface Project {
-    icon: string;
+    icon?: string;
     title: string;
     description: string;
     technologies: string;
     links: ProjectLink[];
+    image?: string;
+    image_alt?: string;
 }
 
 export interface ProjectsConfig {

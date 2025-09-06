@@ -121,13 +121,14 @@ export const PROJECTS = {
             ]
         },
         {
-            icon: 'fa-solid fa-people-roof',
             title: 'ARCD | Gen AI Interior Design',
             description: 'A web app that streamlines the creative process for interior designers by generating unique interior design images using Google\'s Vertex Vision AI API and BigQuery.',
             technologies: 'Technologies: Python | Streamlit | Vertex AI | BigQuery | Google Cloud | CSS | HTML',
             links: [
                 { text: 'GitHub', url: 'https://github.com/Andre-210/ARCD' }
-            ]
+            ],
+            image: 'assets/ARCD.jpeg',
+            image_alt: 'ARCD Project'
         },
         {
             icon: 'fa-solid fa-brain',
@@ -138,13 +139,14 @@ export const PROJECTS = {
             ]
         },
         {
-            icon: 'fa-solid fa-chess',
             title: 'Chess Game',
             description: 'Practiced Object-Oriented Programming by developing a complete chess game where users can create, validate, and move chess pieces according to standard rules.',
             technologies: 'Technologies: Java | GitHub | Figma | Java AWT API',
             links: [
                 { text: 'GitHub', url: 'https://github.com/Andre-210/chessGame' }
-            ]
+            ],
+            image: 'assets/ChessGame.png',
+            image_alt: 'Chess Game Project'
         }
     ]
 };
